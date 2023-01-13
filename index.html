@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <!-- <script src="https://kit.fontawesome.com/151c2aa1e0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <!-- <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon"> -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Personal Portfolio</title>
+</head>
+<body>
+
+    <nav>
+        <h1>Sherline <br> De Guzman</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">AboutMe</a></li>
+            <li><a href="#">Family</a></li>
+            <li><a href="#">Classmates</a></li>
+        </ul>
+    </nav>
+
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="images/person1.jpg">
+
+        
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="images/person2.jpg">
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="images/Person3.jpg">
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+      
+      </div>
+      <div class="hr1">
+        <hr>
+      </div>
+    
+        
+          <div class="about-info">
+              <img src="images/about-me.jpg" alt="">
+              <h1 >About Me</h1>
+              <p>Hello my name is Sherline M. De Guzman, 20 years Old, I live in Mangaldan Pangasinan. but, im currently live in Sampaloc Apalit Pampanga, 
+                beacuse im still studying at La Verdad Christian College. I am now second year college student and the course I took was Associate in Computer Technology
+               </p> <br>
+               <p> My motto was <br> <em>"I CAN DO ALL THINGS TROUGH CHRIST WHO STRENGTHENS ME"</em></p>
+           <br><br>
+          </div>
+        
+       
+        <hr>
+
+        <div class="row">
+          <div class="column">
+            <h1>My Family</h1>
+            <div class="card">
+              <img class="she" src="images/sherlinnne.jpg">
+            </div>
+          </div>
+        
+          <div class="column">
+            <div class="card1">
+              <img src="images/brother-sherwin.jpg">
+              <div class="details">
+                <h2>Sherwin De Guzman</h2>
+                <p class="title">My Brother</p>
+                <p>He is the youngest of our siblings, he current studying at MNHS Grade 10 student.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="column">
+            <div class="card1">
+              <img src="images/sheena.jpg">
+              <div class="details">
+                <h2>Sheena De Guzman</h2>
+                <p class="title">My sister</p>
+                <p>She is 21 years old, she's Current studying at UDD 3rd year college.</p>
+              </div>
+            </div>
+          </div>
+          </div>
+
+          <hr>
+          
+          <div class="Parent">
+          <div class="mapa">
+            <div class="text">
+                <p>This is my Father, Manny De Guzman. 
+                  <br> He is 51 years before he died on April 13, 2022. The caused of his 
+                  dead because of high blood.
+                </p>
+              </div>
+              </div>
+
+
+              <div class="mapa">
+                <div class="pics">
+                  <img src="images/father.jpg">
+                </div>
+              </div>     
+          
+          <div class="mapa">
+            <div class="pics">
+              <img src="images/mother.jpg">
+              <div class="information">
+                <h2>Mary Jane Molina</h2>
+                <p class="title">My Mother</p>
+                <p>She is 47 years old, she is a OFW in Singapore for 14 years</p>
+              </div>
+            </div>
+          </div>
+
+          </div>
+
+          <hr>
+
+
+          <div class="grid-container">
+            <div class="item1">The La Verdad Christian College or LVCC is a private non-stock, non-sectarian educational institution established in Apalit, Pampanga, Philippines. It is the first private school in the Philippines that grants scholarship programs to deserving students by providing tuition-free education and no miscellaneous fees.</div>
+            <p>La Verdad Christian College</p>
+            <img src="images/laverdad.jpg" class="item3">
+            </div>
+
+            <div class="hr2">
+              <hr>
+            </div>
+
+            <div class="classmates">
+              <p> My <br> Classmates</p>
+              <img src="images/act2.jpg"> 
+            </div>
+
+            <div class="act2"> The students of ACT-2 With our instructor on <br> Web Development, Sir Jasper Rebong.</div>
+
+      <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+         
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+      
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+        
+      
+     </body>
+     </html>    
